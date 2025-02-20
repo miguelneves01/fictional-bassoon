@@ -1,14 +1,13 @@
 "use client"
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const dateDavidCarBrokeDown: Date = new Date("2024-12-03T00:00:00Z");
 
 export default function Home() {
-  let [days, setDays] = useState(0);
-  let [hours, setHours] = useState(0);
-  let [minutes, setMinutes] = useState(0);
-  let [seconds, setSeconds] = useState(0);
+  const [days, setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
