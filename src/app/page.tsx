@@ -10,7 +10,7 @@ export default function Home() {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    setInterval(() => {
       const now = new Date();
       const dateDiff = now.getTime() - dateDavidCarBrokeDown.getTime();
       setDays(Math.floor(dateDiff / (1000 * 60 * 60 * 24)));
